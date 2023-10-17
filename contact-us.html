@@ -33,13 +33,27 @@
                     <h2 class="text-info">Contacto</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
                 </div>
-                <form action="contact.php" method="post">
-                    <div class="mb-3"><label class="form-label" for="name">Nombre</label><input class="form-control" type="text" id="name" name="name" data-bs-theme="light"></div>
-                    <div class="mb-3"><label class="form-label" for="subject">Titulo</label><input class="form-control" type="text" id="subject" name="subject" data-bs-theme="light"></div>
-                    <div class="mb-3"><label class="form-label" for="email">Email</label><input class="form-control" type="email" id="email" name="email" data-bs-theme="light"></div>
-                    <div class="mb-3"><label class="form-label" for="message">Mensaje</label><textarea class="form-control" id="message" name="message" data-bs-theme="light"></textarea></div>
-                    <div class="mb-3"><button class="btn btn-primary" type="submit">Enviar</button></div>
-                </form>
+                <form action="https://formspree.io/f/myyqlvke" method="POST">
+                    <div class="mb-3">
+                      <label class="form-label" for="name">Nombre</label>
+                      <input class="form-control" type="text" id="name" name="name" data-bs-theme="light" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="subject">Titulo</label>
+                      <input class="form-control" type="text" id="subject" name="subject" data-bs-theme="light" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="email">Email</label>
+                      <input class="form-control" type="email" id="email" name="_replyto" data-bs-theme="light" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="message">Mensaje</label>
+                      <textarea class="form-control" id="message" name="message" data-bs-theme="light" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                  </form>
             </div>
         </section>
     </main>
